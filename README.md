@@ -26,15 +26,20 @@ composer update
 chown -R apache.apache data <= If web server is run by different user, user and group name (apache) are different
 chmod -R 744 data
 ```
-Note: For linux users, the command below might need to be run
+Note: For linux users, the command below might need to be run [detail](https://www.tecmint.com/disable-selinux-temporarily-permanently-in-centos-rhel-fedora/)
 ```sh
 setenforce 0
 ```
-[Here's](https://www.tecmint.com/disable-selinux-temporarily-permanently-in-centos-rhel-fedora/) why for more details
 
 4. Visit the page 
 ```sh
 E.g. http://localhost/comments
+```
+# Test
+Unit tests are available using phpunit
+```sh
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/CommentTest
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/CommentsTest
 ```
 
 # Screenshot
