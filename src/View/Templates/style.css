@@ -1,0 +1,81 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+  font: Arial Black, Georgia, serif;
+}
+
+input[type=text], select, textarea {
+  display: block;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin: 10px;
+  resize: vertical 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px
+}
+
+form {
+  background-color: #d1e2ff;
+  margin: 10px;
+}
+
+.name {
+  width: 50%;
+}
+
+.comment{
+  width: 90%;
+}
+
+label{
+  padding-left: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+table{
+  width: 100%;
+  border: 1px solid #f2f2f2;
+}
+
+.comment-body-wrap{
+  border: 1px solid; 
+  margin: 10px; 
+}
+
+.comment-name{
+  font-size: 1.0rem; 
+  padding: 5px
+}
+
+.comment-timestamp{
+  font-size: 0.7rem; 
+  padding: 5px
+}
+
+.comment-content{
+  padding: 5px; 
+  background: #f3f6f8
+}
+
+.comment-reply-wrap{
+  height: 40px
+}
+
+.comment-reply{
+  float: right; 
+  padding: 10px
+}
+

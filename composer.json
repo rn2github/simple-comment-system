@@ -1,0 +1,23 @@
+{
+    "name": "rn2github/simple-comment-system",
+    "description": "TMBC Coding Challenge",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ryohei nagatsuka",
+            "email": "ryoheinaga@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+           "TMBCCodingChallenge\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    }
+}
