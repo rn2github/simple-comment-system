@@ -10,9 +10,9 @@ Simple comment system using PHP
 
 
 # Installation
-1. Clone this repository and place the folder under the document root
+1. Clone or download this repository and place the folder under the document root
 ```sh
-git@github.com:rn2github/simple-comment-system.git
+git clone https://github.com/rn2github/simple-comment-system.git .
 mv simple-comment-system /path/to/documentroot/comments
 ```
 
