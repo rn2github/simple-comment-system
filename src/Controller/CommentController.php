@@ -53,14 +53,14 @@ class CommentController implements ControllerInterface{
         // Create Comments instance 
         $comments = new Comments($rootComment);
 
-        // Call method to add a new comment
-        $newComment = $comments->create($parentId, $name, $content);
-
         try{
+            // Call method to add a new comment
+            $newComment = $comments->create($parentId, $name, $content);
+
             // Save comments to file
             Util::saveCommentsToFile($rootComment);
         }catch(Exception $e){
-            // File permission denided
+            // File permission denided/Other errors
             header('Location: ' . $_SERVER['PHP_SELF'] . '?error=' . urlencode($e->getMessage()));
             return;            
         }

@@ -2,6 +2,7 @@
 
 namespace TMBCCodingChallenge\Model;
 
+use Exception;
 use TMBCCodingChallenge\Model\Comment;
 
 class Comments{
@@ -34,6 +35,14 @@ class Comments{
 
             if(0 > $depth)
                 throw new Exception('Parent not found: ' . $parentId);
+
+            // -----------------------------------
+            // Requirement
+            //------------------------------------
+            //
+            // Maximum of 3 levels in nested comments
+            if(3 <= $depth)
+                throw new Exception('Exceed max level of children: ' . $depth);
 
             // Add a new comment under a parent and as its child
             $comment = new Comment($parentComment, $name, $content);
